@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 
-import LightBulbOn from '../assets/light-on.png'
-import LightBulbOff from '../assets/light-off.png'
+
+import imagen from '../assets/donramon.jpg'
 
 export const LightbulbPage = () => {
   const [isOn, setIsOn] = useState(false);
 
   return (
     <div className='lightbulb-page'>
-      <p>Presiona el botón para encender o apagar la ampolleta</p>
-      <img src={isOn ? LightBulbOn : LightBulbOff} height={130} alt='ampolleta' />
-      <br />
-      <br />
-      <button onClick={() => setIsOn(!isOn)}>
-        {isOn ? 'Apagar' : 'Encender'}
-      </button>
+          <h1> 
+              <b>Area personal</b>
+          </h1>
+          <h2> 
+          <p>Nada por ahora</p>
+          </h2>
+          <img src={imagen} alt="Don ramon" />
     </div>
   )
 }

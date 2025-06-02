@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import imagen_inf from '../assets/informatica.png'
 
-export const HomePage = () => {
+export const CursosPage = () => {
+  
   const navigate = useNavigate();
 
   const disenio = () => {
@@ -18,7 +19,7 @@ export const HomePage = () => {
     <div className='cursos-page'>
 
     <h1> 
-      <b>Página principal</b>
+      <b>Mis Cursos</b>
     </h1>
     <div style={{ display: 'flex', flexDirection: 'row' ,shapeMargin: "10px", gap:"35px", maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
     
@@ -37,9 +38,8 @@ export const HomePage = () => {
         style={{ width: 400, height: 130, marginBottom: 8 }}
       />
       <span>(202501)(INF322) DISEÑO DE INTERFACES USUARIAS|Paralelos:200</span>
-
-
     </button>
+
 
       <button onClick={cc} 
       style={{ display: 'flex',
@@ -58,10 +58,10 @@ export const HomePage = () => {
       <span>(202501)(INF285) COMPUTACIÓN CIENTÍFICA|Paralelos:200/201</span>
     </button>
      
-
+      
     </div>
     </div>
   )
 }
 
-export default HomePage
+export default CursosPage

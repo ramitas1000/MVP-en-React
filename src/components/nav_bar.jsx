@@ -13,13 +13,21 @@ export const NavBar = () => {
         className={navLinkClass}
         to='/'
       >
-        Inicio
+        Pagina principal
       </NavLink>
+
       <NavLink
         className={navLinkClass}
         to='/lightbulb'
       >
-        Ampolleta
+        Área personal
+      </NavLink>
+
+      <NavLink
+        className={navLinkClass}
+        to='/cursos'
+      >
+        Cursos
       </NavLink>
     </nav>
   )
