@@ -20,6 +20,18 @@ const buttonStyle = {
   background: 'white'
 };
 
+const buttonStyleActive = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '10px',
+  border: '1px solid #222',
+  borderRadius: '8px',
+  cursor: 'pointer',
+  background: '#333',
+  color: 'white',
+};
+
 const buttonStyle2 = {
   display: 'flex',
   flexDirection: 'row',
@@ -101,7 +113,7 @@ export const diumatPage = () => {
       <span>Certámenes</span>
     </button>
 
-    <button onClick={material} style={buttonStyle}>
+    <button onClick={material} style={buttonStyleActive}>
       <span>Material</span>
     </button>
 

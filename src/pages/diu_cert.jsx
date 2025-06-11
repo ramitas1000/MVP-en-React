@@ -17,6 +17,18 @@ const buttonStyle = {
   background: 'white'
 };
 
+const buttonStyleActive = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '10px',
+  border: '1px solid #222',
+  borderRadius: '8px',
+  cursor: 'pointer',
+  background: '#333',
+  color: 'white',
+};
+
 const buttonStyle2 = {
   display: 'flex',
   flexDirection: 'row',
@@ -95,7 +107,7 @@ export const diucertPage = () => {
       <span>Información General</span>
     </button>
 
-    <button onClick={cert} style={buttonStyle}>
+    <button onClick={cert} style={buttonStyleActive}>
       <span>Certámenes</span>
     </button>
 

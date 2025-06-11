@@ -18,6 +18,18 @@ const buttonStyle = {
   background: 'white'
 };
 
+const buttonStyleActive = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '10px',
+  border: '1px solid #222',
+  borderRadius: '8px',
+  cursor: 'pointer',
+  background: '#333',
+  color: 'white',
+};
+
 const buttonStyle2 = {
   display: 'flex',
   flexDirection: 'row',
@@ -97,7 +109,7 @@ export const DiuPage = () => {
     flexWrap: 'wrap',
     marginLeft: '90px'
   }}>
-    <button onClick={disenio} style={buttonStyle}>
+    <button onClick={disenio} style={buttonStyleActive}>
       <span>Información General</span>
     </button>
 

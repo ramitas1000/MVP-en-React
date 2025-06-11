@@ -18,6 +18,18 @@ const buttonStyle = {
   background: 'white'
 };
 
+const buttonStyleActive = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '10px',
+  border: '1px solid #222',
+  borderRadius: '8px',
+  cursor: 'pointer',
+  background: '#333',
+  color: 'white',
+};
+
 const buttonStyle2 = {
   display: 'flex',
   flexDirection: 'row',
@@ -111,7 +123,7 @@ export const diuproyectPage = () => {
       <span>Tareas</span>
     </button>
 
-    <button onClick={proyecto} style={buttonStyle}>
+    <button onClick={proyecto} style={buttonStyleActive}>
       <span>Proyecto</span>
     </button>
   </div>
