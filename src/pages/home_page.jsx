@@ -18,7 +18,7 @@ export const HomePage = () => {
     <div className='cursos-page'>
 
     <h1> 
-      <b>Página principal</b>
+      <b>Página Principal</b>
     </h1>
     <div style={{ display: 'flex', flexDirection: 'row' ,shapeMargin: "10px", gap:"35px", maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
     

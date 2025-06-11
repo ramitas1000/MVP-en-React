@@ -15,13 +15,17 @@ import DiuproyectPage from '../pages/diu_proyect'
 import PDFPage from '../pages/pdf_page'
 import ForoPage from '../pages/foro_Page'
 import UploadPage from '../pages/upload_page'
+import utfsmLogo from '../assets/25.-USM.png'
+
 
 const Layout = () => {
   return (
     <BrowserRouter>
       <div className='layout'>
-        <h1 className='layout__title'>UTFSM</h1>
-        <NavBar />
+        <header className='layout__title'>
+          <img src={utfsmLogo} alt='Logo UTFSM' className='layout__logo' style={{ height: '50px', width: 'auto' }} />
+          <NavBar />
+        </header>
         <div className='layout__page'>
           <Routes>
             <Route path='/' element={<HomePage />} />

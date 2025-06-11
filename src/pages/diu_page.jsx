@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import pdf_img from '../assets/pdf.png'
 import foro_img from '../assets/foro.png'
 import descarga from '../assets/descarga.png'
+import utfsmLogo from '../assets/25.-USM.png';
+
 
 const buttonStyle = {
   display: 'flex',
@@ -82,20 +84,21 @@ export const DiuPage = () => {
     };
 
   return (
-   <div className='diu-page'>
-  <h1> 
-    <b>(202501)(INF322) DISEÑO DE INTERFACES USUARIAS | Paralelos: 200</b>
-  </h1>
 
+  <div className='diu-page'>
+          <h1 style={{marginLeft: '90px'}}> 
+  <b>(202501)(INF322) DISEÑO DE INTERFACES USUARIAS | Paralelos: 200</b>
+  </h1>
 
   <div style={{ 
     display: 'flex', 
     flexDirection: 'row', 
     gap: '10px', 
-    flexWrap: 'wrap' 
+    flexWrap: 'wrap',
+    marginLeft: '90px'
   }}>
     <button onClick={disenio} style={buttonStyle}>
-      <span>Información general</span>
+      <span>Información General</span>
     </button>
 
     <button onClick={cert} style={buttonStyle}>
@@ -139,7 +142,7 @@ export const DiuPage = () => {
                 alt="Icono"
                 style={{ width: 100, height: 100, marginBottom: 8 }}
           />
-        <span>Noticias y avisos</span>
+        <span>Noticias y Avisos</span>
       </button>
 
 

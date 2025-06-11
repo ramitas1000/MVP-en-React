@@ -87,7 +87,7 @@ export const diutareaPage = () => {
   
   return (
 <div className='diu-page'>
-  <h1> 
+          <h1 style={{ marginLeft: '90px' }}>  
     <b>(202501)(INF322) DISEÑO DE INTERFACES USUARIAS | Paralelos: 200</b>
   </h1>
 
@@ -96,10 +96,11 @@ export const diutareaPage = () => {
     display: 'flex', 
     flexDirection: 'row', 
     gap: '10px', // Espaciado entre botones
-    flexWrap: 'wrap' // Opcional: para que pasen a otra línea si no caben
+    flexWrap: 'wrap', // Opcional: para que pasen a otra línea si no caben
+    marginLeft: '90px'
   }}>
     <button onClick={disenio} style={buttonStyle}>
-      <span>Información general</span>
+      <span>Información General</span>
     </button>
 
     <button onClick={cert} style={buttonStyle}>

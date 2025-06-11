@@ -1,5 +1,10 @@
 .layout__title {
-  font-size: 24pt;
-  margin: 0;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.layout__logo {
+  height: 50px;
+  width: auto;
 }
